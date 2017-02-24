@@ -91,7 +91,7 @@
 
 #define Ctrl(c) ((c)&037)
 
-#define MAXSTR		768
+#define MAXSTR		8192
 #define MAXARGS 	64
 #define MSGWAIT 	5
 #define MSGMINWAIT 	1
@@ -101,7 +101,7 @@
  * if a nasty user really wants to try a history of 3000 lines on all 10
  * windows, he will allocate 8 MegaBytes of memory, which is quite enough.
  */
-#define MAXHISTHEIGHT		3000
+#define MAXHISTHEIGHT		9000
 #define DEFAULTHISTHEIGHT	100
 #if defined(NAME_MAX) && NAME_MAX < 16
 # define DEFAULT_BUFFERFILE     "/tmp/screen-xchg"

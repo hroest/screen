@@ -511,7 +511,7 @@ typedef struct fd_set { int fds_bits[1]; } fd_set;
 #endif
 
 #ifndef MAXPATHLEN
-# define MAXPATHLEN 1024
+# define MAXPATHLEN 8192
 #endif
 
 /* 
@@ -519,7 +519,7 @@ typedef struct fd_set { int fds_bits[1]; } fd_set;
  * tends to choke when pasting. Use high values if you want to test
  * how many characters your pty's can buffer.
  */
-#define IOSIZE		4096
+#define IOSIZE		8192
 
 /* Changing those you won't be able to attach to your old sessions
  * when changing those values in official tree don't forget to bump
